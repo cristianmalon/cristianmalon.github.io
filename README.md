@@ -1,44 +1,57 @@
-# Cristian Malon · Página personal
+# Cristian Malón Javier · Portafolio profesional
 
-Página personal estática de una sola página, hecha con HTML y CSS, sin frameworks ni proceso de compilación.
+Portafolio de una sola página de Cristian Malón Javier, Analista de Sistemas y Desarrollador .NET (Lima, Perú). Está hecho con HTML y CSS, sin frameworks, sin JavaScript y sin proceso de compilación.
+
+Publicado en: https://cristianmalon.github.io/
+
+## Contenido de la página
+
+- **Portada:** nombre, titular, años de experiencia y un gráfico en HTML y CSS (procesos → requerimientos → desarrollo → datos).
+- **Perfil:** resumen profesional y tres especialidades.
+- **Experiencia:** cronología de cargos, de la más reciente a la más antigua.
+- **Proyectos y aportes:** tres casos con contexto, aporte y las tecnologías asociadas a cada uno.
+- **Tecnologías:** tecnologías destacadas y el resto agrupadas por tipo.
+- **Formación:** título universitario y formación complementaria.
+- **Contacto:** correo, GitHub y LinkedIn.
+
+El contenido profesional proviene únicamente de los datos verificados del CV. La página no muestra teléfono, dirección, referencias ni el CV en PDF.
 
 ## Archivos
 
 | Archivo | Contenido |
 | --- | --- |
-| `index.html` | Estructura y contenido: encabezado, Sobre mí, Habilidades y Contacto |
-| `styles.css` | Diseño adaptable a celular y escritorio |
-| `capturas/` | Capturas de la página en escritorio y en celular |
+| `index.html` | Estructura y textos |
+| `styles.css` | Diseño adaptable a celular y escritorio; los colores están como variables al inicio (`--accent` es el verde petróleo) |
+| `capturas/portafolio/antes/` y `capturas/portafolio/despues/` | Página personal anterior y portafolio actual, a 1440 px y 390 px |
+| `capturas/portafolio/comparativa.png` | Comparación lado a lado |
+| `capturas/antes/`, `capturas/despues/` | Capturas de versiones anteriores (cambio de color de acento) |
+
+## Accesibilidad
+
+- Enlace «Saltar al contenido» al inicio.
+- Navegación completa con teclado y foco visible en todos los enlaces.
+- Contraste de texto que cumple WCAG AA.
+- Avisos para lectores de pantalla en los enlaces que se abren en otra pestaña.
+- Respeto por la preferencia de movimiento reducido.
 
 ## Abrir la página en tu computadora
 
-1. Descarga o clona esta carpeta.
-2. Haz doble clic en `index.html` y se abrirá en tu navegador.
+Haz doble clic en `index.html`. No hace falta instalar nada ni levantar un servidor.
 
-No hace falta instalar nada ni levantar un servidor.
+## Publicar cambios en GitHub Pages
 
-## Publicar en GitHub Pages
+El repositorio `cristianmalon.github.io` publica automáticamente la rama `main`. Para actualizar la página:
 
-1. En GitHub, crea un repositorio nuevo (por ejemplo `cristianmalon.github.io` o `pagina-personal`).
-2. Sube los archivos desde la terminal, dentro de esta carpeta:
+```bash
+git add .
+git commit -m "Describe el cambio"
+git push
+```
 
-   ```bash
-   git init
-   git add index.html styles.css README.md capturas
-   git commit -m "Página personal"
-   git branch -M main
-   git remote add origin https://github.com/cristianmalon/NOMBRE-DEL-REPO.git
-   git push -u origin main
-   ```
+La página se actualiza en uno o dos minutos en https://cristianmalon.github.io/.
 
-   También puedes usar el botón **Add file → Upload files** en la web de GitHub.
-3. En el repositorio, entra a **Settings → Pages**.
-4. En **Build and deployment**, elige **Source: Deploy from a branch**, la rama **main** y la carpeta **/ (root)**. Pulsa **Save**.
-5. Después de uno o dos minutos, la página estará en:
-   - `https://cristianmalon.github.io/` si el repositorio se llama `cristianmalon.github.io`.
-   - `https://cristianmalon.github.io/NOMBRE-DEL-REPO/` en cualquier otro caso.
+### Si se publica en un repositorio nuevo
 
-## Editar el contenido
-
-- Los textos están en `index.html`.
-- Los colores están definidos como variables al inicio de `styles.css` (`--accent` es el color de acento, un terracota).
+1. Crea el repositorio en GitHub y sube los archivos.
+2. En **Settings → Pages**, elige **Deploy from a branch**, la rama **main** y la carpeta **/ (root)**.
+3. La página quedará en `https://USUARIO.github.io/NOMBRE-DEL-REPO/`.

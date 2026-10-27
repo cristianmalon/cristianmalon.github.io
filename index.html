@@ -3,58 +3,293 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Cristian Malon · Analista de sistemas</title>
-  <meta name="description" content="Cristian Malon, analista de sistemas con 10 años de experiencia analizando procesos y sistematizándolos.">
+  <title>Cristian Malón Javier · Analista de Sistemas y Desarrollador .NET</title>
+  <meta name="description" content="Cristian Malón Javier, Ingeniero de Sistemas titulado en Lima, Perú. Analista de Sistemas y Desarrollador .NET con más de 10 años de experiencia en análisis, desarrollo e implementación de soluciones empresariales.">
   <link rel="icon" href="data:,">
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
   <a class="skip-link" href="#contenido">Saltar al contenido</a>
 
-  <header class="hero">
-    <div class="container">
-      <p class="hero__eyebrow">Hola, soy</p>
-      <h1 class="hero__name">Cristian Malon</h1>
-      <p class="hero__title">Analista de sistemas · Procesos, requerimientos y modelado</p>
-      <a class="btn" href="#contacto">Contáctame</a>
+  <header class="site-header">
+    <div class="container site-header__inner">
+      <a class="brand" href="#inicio">Cristian Malón</a>
+      <nav class="site-nav" aria-label="Secciones">
+        <ul class="site-nav__list">
+          <li><a class="site-nav__link" href="#perfil">Perfil</a></li>
+          <li><a class="site-nav__link" href="#experiencia">Experiencia</a></li>
+          <li><a class="site-nav__link" href="#proyectos">Proyectos</a></li>
+          <li><a class="site-nav__link" href="#tecnologias">Tecnologías</a></li>
+          <li><a class="site-nav__link" href="#formacion">Formación</a></li>
+          <li><a class="site-nav__link" href="#contacto">Contacto</a></li>
+        </ul>
+      </nav>
     </div>
   </header>
 
   <main id="contenido" tabindex="-1">
-    <section class="section" id="sobre-mi" aria-labelledby="sobre-mi-titulo">
-      <div class="container">
-        <h2 class="section__title" id="sobre-mi-titulo">Sobre mí</h2>
-        <p class="about__text">Soy analista de sistemas con 10 años de experiencia analizando procesos y sistematizándolos. Me interesa entender cómo funciona un proceso de principio a fin y convertirlo en un sistema claro y ordenado.</p>
+
+    <section class="hero" id="inicio" aria-labelledby="hero-titulo">
+      <div class="container hero__grid">
+        <div class="hero__text">
+          <p class="hero__eyebrow">Analista de Sistemas y Desarrollador&nbsp;.NET</p>
+          <h1 class="hero__name" id="hero-titulo">Cristian Malón Javier</h1>
+          <p class="hero__title">Del análisis de procesos al desarrollo de soluciones empresariales.</p>
+          <p class="hero__lead">Ingeniero de Sistemas titulado, con experiencia en análisis, desarrollo e implementación de soluciones empresariales. He trabajado en levantamiento de requerimientos, mejora de procesos e integración de sistemas en los sectores de logística, tecnología, agroindustria y textil.</p>
+          <ul class="hero__facts">
+            <li class="hero__fact hero__fact--highlight">Más de 10 años de experiencia</li>
+            <li class="hero__fact">Lima, Perú</li>
+          </ul>
+          <div class="hero__actions">
+            <a class="btn btn--primary" href="#experiencia">Ver experiencia</a>
+            <a class="btn btn--secondary" href="#contacto">Contactar</a>
+          </div>
+        </div>
+
+        <figure class="flow" aria-labelledby="flow-caption">
+          <figcaption class="flow__caption" id="flow-caption">Cómo trabajo</figcaption>
+          <ol class="flow__steps">
+            <li class="flow__step">
+              <span class="flow__num" aria-hidden="true">01</span>
+              <span class="flow__label">Procesos</span>
+              <span class="flow__desc">Análisis, rediseño y sistematización</span>
+            </li>
+            <li class="flow__step">
+              <span class="flow__num" aria-hidden="true">02</span>
+              <span class="flow__label">Requerimientos</span>
+              <span class="flow__desc">Levantamiento y formalización con usuarios de negocio</span>
+            </li>
+            <li class="flow__step">
+              <span class="flow__num" aria-hidden="true">03</span>
+              <span class="flow__label">Desarrollo</span>
+              <span class="flow__desc">.NET, C#, aplicaciones web y APIs</span>
+            </li>
+            <li class="flow__step">
+              <span class="flow__num" aria-hidden="true">04</span>
+              <span class="flow__label">Datos</span>
+              <span class="flow__desc">SQL Server, datamarts y Power BI</span>
+            </li>
+          </ol>
+        </figure>
       </div>
     </section>
 
-    <section class="section section--alt" id="habilidades" aria-labelledby="habilidades-titulo">
+    <section class="section" id="perfil" aria-labelledby="perfil-titulo">
       <div class="container">
-        <h2 class="section__title" id="habilidades-titulo">Habilidades</h2>
-        <ul class="skills">
-          <li class="skill-card">
-            <span class="skill-card__num" aria-hidden="true">01</span>
-            <h3 class="skill-card__title">Análisis de procesos</h3>
-            <p class="skill-card__text">Estudiar cómo se realiza un proceso paso a paso: quién participa, qué información se usa y en qué orden ocurre cada actividad. A partir de eso, identificar qué partes pueden sistematizarse.</p>
-          </li>
-          <li class="skill-card">
-            <span class="skill-card__num" aria-hidden="true">02</span>
-            <h3 class="skill-card__title">Levantamiento de requerimientos</h3>
-            <p class="skill-card__text">Recoger con las personas involucradas qué necesita hacer un sistema y bajo qué condiciones. Documentar esas necesidades de forma clara para que puedan desarrollarse y validarse.</p>
-          </li>
-          <li class="skill-card">
-            <span class="skill-card__num" aria-hidden="true">03</span>
-            <h3 class="skill-card__title">Modelado de sistemas y datos</h3>
-            <p class="skill-card__text">Representar la estructura y el comportamiento de un sistema mediante diagramas y modelos. Definir qué datos se manejan y cómo se relacionan entre sí.</p>
-          </li>
-        </ul>
+        <header class="section__head">
+          <p class="section__kicker">Perfil</p>
+          <h2 class="section__title" id="perfil-titulo">Análisis y desarrollo de soluciones empresariales</h2>
+        </header>
+        <div class="profile">
+          <div class="profile__text">
+            <p>Ingeniero de Sistemas titulado con más de 10 años de experiencia en análisis, desarrollo e implementación de soluciones empresariales. Experiencia en .NET, C#, SQL Server, aplicaciones web, APIs, arquitectura en capas, MVC y Power BI.</p>
+            <p>Experiencia en levantamiento de requerimientos, mejora de procesos, integración de sistemas y soporte a operaciones críticas en sectores de logística, tecnología, agroindustria y textil.</p>
+          </div>
+          <ul class="specialties">
+            <li class="specialty">
+              <h3 class="specialty__title">Análisis de procesos y requerimientos</h3>
+              <p class="specialty__text">Análisis, rediseño, documentación y sistematización de procesos de negocio. Levantamiento y formalización de requerimientos funcionales con usuarios de negocio.</p>
+            </li>
+            <li class="specialty">
+              <h3 class="specialty__title">Desarrollo de soluciones empresariales .NET</h3>
+              <p class="specialty__text">Desarrollo y mantenimiento de aplicaciones empresariales .NET, con experiencia en C#, aplicaciones web, APIs, arquitectura en capas y MVC. Migración de módulos críticos de sistemas legados hacia plataforma web .NET.</p>
+            </li>
+            <li class="specialty">
+              <h3 class="specialty__title">Datos, Business Intelligence y reportería</h3>
+              <p class="specialty__text">Construcción de datamarts y reportes con Reporting Services, Crystal Reports y Power BI. Administración y optimización de bases de datos SQL Server.</p>
+            </li>
+          </ul>
+        </div>
       </div>
     </section>
 
-    <section class="section" id="contacto" aria-labelledby="contacto-titulo">
+    <section class="section section--alt" id="experiencia" aria-labelledby="experiencia-titulo">
       <div class="container">
-        <h2 class="section__title" id="contacto-titulo">Contacto</h2>
-        <p class="contact__intro">Si quieres conversar sobre un proyecto o un proceso, escríbeme por cualquiera de estos medios.</p>
+        <header class="section__head">
+          <p class="section__kicker">Experiencia</p>
+          <h2 class="section__title" id="experiencia-titulo">Trayectoria profesional</h2>
+        </header>
+        <ol class="timeline">
+          <li class="timeline__item timeline__item--current">
+            <div class="timeline__meta">
+              <p class="timeline__period"><time datetime="2021-01">Ene. 2021</time> – Actualidad</p>
+              <span class="timeline__badge">Actual</span>
+            </div>
+            <div class="timeline__body">
+              <h3 class="timeline__role">Analista Programador</h3>
+              <p class="timeline__company">Textiles Camones</p>
+              <ul class="timeline__points">
+                <li>Análisis, desarrollo y mantenimiento de aplicaciones web para áreas comerciales y de producción.</li>
+                <li>Levantamiento y formalización de requerimientos funcionales con usuarios de negocio.</li>
+                <li>Elaboración de datamarts para análisis de producción y reportería.</li>
+              </ul>
+            </div>
+          </li>
+          <li class="timeline__item">
+            <div class="timeline__meta">
+              <p class="timeline__period"><time datetime="2020-01">Ene. 2020</time> – <time datetime="2020-12">Dic. 2020</time></p>
+            </div>
+            <div class="timeline__body">
+              <h3 class="timeline__role">Analista Programador</h3>
+              <p class="timeline__company">Migiva Group</p>
+              <ul class="timeline__points">
+                <li>Evaluación, mejora y documentación de procesos de negocio.</li>
+                <li>Coordinación del equipo de desarrollo, con planificación y distribución de tareas.</li>
+                <li>Desarrollo de reportería y visualizaciones con Power BI y Canvas JS.</li>
+              </ul>
+            </div>
+          </li>
+          <li class="timeline__item">
+            <div class="timeline__meta">
+              <p class="timeline__period"><time datetime="2019-10">Oct. 2019</time> – <time datetime="2019-12">Dic. 2019</time></p>
+            </div>
+            <div class="timeline__body">
+              <h3 class="timeline__role">Desarrollador I+D</h3>
+              <p class="timeline__company">Intellisoft S.A.</p>
+              <ul class="timeline__points">
+                <li>Análisis, propuesta y desarrollo de soluciones tecnológicas.</li>
+                <li>Creación de una aplicación web para un proceso de atención con .NET Core.</li>
+                <li>Capacitación a usuarios y documentación técnica y funcional.</li>
+              </ul>
+            </div>
+          </li>
+          <li class="timeline__item">
+            <div class="timeline__meta">
+              <p class="timeline__period"><time datetime="2014-09">Sept. 2014</time> – <time datetime="2019-09">Sept. 2019</time></p>
+            </div>
+            <div class="timeline__body">
+              <h3 class="timeline__role">Practicante / Analista Programador / Analista Funcional</h3>
+              <p class="timeline__company">Savar Agentes de Aduana S.A.</p>
+              <ul class="timeline__points">
+                <li>Responsable funcional de la unidad de negocio de almacén de contenedores.</li>
+                <li>Análisis, rediseño y sistematización de procesos, y formalización de requerimientos.</li>
+                <li>Soluciones para facturación, almacén, cobranzas, conciliaciones y reportes gerenciales.</li>
+              </ul>
+            </div>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <section class="section" id="proyectos" aria-labelledby="proyectos-titulo">
+      <div class="container">
+        <header class="section__head">
+          <p class="section__kicker">Proyectos y aportes</p>
+          <h2 class="section__title" id="proyectos-titulo">Sistemas en los que he trabajado</h2>
+        </header>
+        <div class="projects">
+          <article class="project project--featured" aria-labelledby="proyecto-1">
+            <p class="project__company">Migiva Group</p>
+            <h3 class="project__title" id="proyecto-1">Proyección y ejecución de ventas</h3>
+            <dl class="project__details">
+              <div class="project__row"><dt>Contexto</dt><dd>Sistema web para la proyección y ejecución de ventas.</dd></div>
+              <div class="project__row"><dt>Mi aporte</dt><dd>Creación del sistema web.</dd></div>
+            </dl>
+            <ul class="tag-list" aria-label="Tecnologías del proyecto">
+              <li class="tag">MVC</li>
+              <li class="tag">.NET Core</li>
+              <li class="tag">API REST</li>
+              <li class="tag">SQL Azure</li>
+            </ul>
+          </article>
+          <article class="project" aria-labelledby="proyecto-2">
+            <p class="project__company">Savar Agentes de Aduana S.A.</p>
+            <h3 class="project__title" id="proyecto-2">Modernización de módulos empresariales</h3>
+            <dl class="project__details">
+              <div class="project__row"><dt>Contexto</dt><dd>Módulos críticos de sistemas legados.</dd></div>
+              <div class="project__row"><dt>Mi aporte</dt><dd>Migración de esos módulos hacia plataforma web .NET con arquitectura en capas y MVC.</dd></div>
+            </dl>
+            <ul class="tag-list" aria-label="Tecnologías del proyecto">
+              <li class="tag">.NET</li>
+              <li class="tag">Arquitectura en capas</li>
+              <li class="tag">MVC</li>
+            </ul>
+          </article>
+          <article class="project" aria-labelledby="proyecto-3">
+            <p class="project__company">Textiles Camones</p>
+            <h3 class="project__title" id="proyecto-3">Sistemas comerciales y de producción textil</h3>
+            <dl class="project__details">
+              <div class="project__row"><dt>Contexto</dt><dd>Áreas comerciales y de producción, con procesos textiles y operativos orientados a trazabilidad y gestión interna.</dd></div>
+              <div class="project__row"><dt>Mi aporte</dt><dd>Desarrollo de sistemas comerciales y de producción textil.</dd></div>
+            </dl>
+            <ul class="tag-list" aria-label="Tecnologías del proyecto">
+              <li class="tag">.NET</li>
+              <li class="tag">Librerías de frontend</li>
+            </ul>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section--alt" id="tecnologias" aria-labelledby="tecnologias-titulo">
+      <div class="container">
+        <header class="section__head">
+          <p class="section__kicker">Tecnologías</p>
+          <h2 class="section__title" id="tecnologias-titulo">Tecnologías y herramientas</h2>
+        </header>
+        <div class="tech">
+          <div class="tech__primary">
+            <h3 class="tech__heading">Tecnologías destacadas</h3>
+            <ul class="tag-list tag-list--lg">
+              <li class="tag tag--strong">.NET</li>
+              <li class="tag tag--strong">C#</li>
+              <li class="tag tag--strong">SQL Server</li>
+              <li class="tag tag--strong">APIs REST</li>
+              <li class="tag tag--strong">Power BI</li>
+            </ul>
+          </div>
+          <div class="tech__secondary">
+            <h3 class="tech__heading">También he trabajado con</h3>
+            <dl class="tech__groups">
+              <div class="tech__group"><dt>Lenguajes y desarrollo</dt><dd>.NET Core, VB6, PHP, JavaScript, jQuery, LINQ, Entity Framework</dd></div>
+              <div class="tech__group"><dt>Frontend y arquitectura</dt><dd>Angular, MVC, arquitectura en capas</dd></div>
+              <div class="tech__group"><dt>Bases de datos</dt><dd>MySQL, PostgreSQL, SQL Azure</dd></div>
+              <div class="tech__group"><dt>BI y reporting</dt><dd>Reporting Services, Integration Services, Analysis Services, Crystal Reports</dd></div>
+              <div class="tech__group"><dt>Herramientas</dt><dd>Visual Studio, Visual Studio Code, Postman, SoapUI, Bizagi, Erwin, Trello, MS Project</dd></div>
+              <div class="tech__group"><dt>Control de versiones</dt><dd>Git, Bitbucket, Subversion</dd></div>
+              <div class="tech__group"><dt>Metodologías y modelado</dt><dd>Scrum, UML, RUP</dd></div>
+            </dl>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="formacion" aria-labelledby="formacion-titulo">
+      <div class="container">
+        <header class="section__head">
+          <p class="section__kicker">Formación</p>
+          <h2 class="section__title" id="formacion-titulo">Estudios y cursos</h2>
+        </header>
+        <div class="education">
+          <div class="education__degree">
+            <p class="education__label">Título universitario</p>
+            <h3 class="education__title">Ingeniería de Sistemas</h3>
+            <p class="education__status">Titulado</p>
+            <p class="education__school">Universidad Nacional del Callao</p>
+          </div>
+          <div class="education__courses">
+            <h3 class="education__subtitle">Formación complementaria</h3>
+            <ul class="course-list">
+              <li class="course"><span class="course__name">Advance Business Intelligence</span> <span class="course__school">DMC Perú</span></li>
+              <li class="course"><span class="course__name">Business Intelligence</span> <span class="course__school">Cibertec</span></li>
+              <li class="course"><span class="course__name">Análisis de información del negocio con Power BI para Excel</span> <span class="course__school">Cibertec</span></li>
+              <li class="course"><span class="course__name">Taller de Transformación Digital, Design Thinking, Lean UX y Scrum</span> <span class="course__school">GESAP</span></li>
+              <li class="course"><span class="course__name">.NET con C#</span></li>
+              <li class="course"><span class="course__name">Administración de Base de Datos con SQL Server</span></li>
+              <li class="course"><span class="course__name">Modelamiento de procesos con BPMN</span></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section--contact" id="contacto" aria-labelledby="contacto-titulo">
+      <div class="container">
+        <header class="section__head">
+          <p class="section__kicker">Contacto</p>
+          <h2 class="section__title" id="contacto-titulo">Datos de contacto</h2>
+        </header>
+        <p class="contact__intro">Puedes escribirme por correo o encontrarme en GitHub y LinkedIn.</p>
         <ul class="contact-list">
           <li class="contact-list__item">
             <span class="contact-list__label">Correo</span>
@@ -74,7 +309,7 @@
   </main>
 
   <footer class="site-footer">
-    <div class="container"><p>© 2026 Cristian Malon</p></div>
+    <div class="container"><p>© 2026 Cristian Malón Javier · Lima, Perú</p></div>
   </footer>
 </body>
 </html>
